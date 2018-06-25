@@ -3,7 +3,7 @@ homework3 on Numerical Analysis using PyThon
 
 * Global Temperature
 * Carbon Dioxide
-* Estimate \\(\pi\\) Number By using the Monte-Carlo Integration
+* Estimate Pi Number By using the Monte-Carlo Integration
 
 ## Requirements
 
@@ -23,7 +23,7 @@ python3 co2_mm_mlo.py
 ./co2_mm_mlo.py
 ```
 ![](./assets/images/co2_mm_mlo.png)
-* Estimate \\(\pi\\) Number By using the Monte-Carlo Integration
+* Estimate Pi Number By using the Monte-Carlo Integration
 ```
 python3 pi_estimate.py
 ./pi_estimate.py
