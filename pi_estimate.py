@@ -3,11 +3,11 @@
 import random
 import matplotlib.pyplot as plt
 
+SAVE_FILENAME = "assets/images/pi_estimate.png"
 # TITLE = "Pi Estimation"
 X_LABEL = "X"
 Y_LABEL = "Y"
-
-N = 1000
+N = 10000
 n_in = []
 n_out = []
 
@@ -40,4 +40,5 @@ ax.set_xlabel(X_LABEL, fontsize=14)
 ax.set_ylabel(Y_LABEL, fontsize=14)
 circle = plt.Circle((0, 0), 1, color='gray', alpha=0.4)
 fig.gca().add_artist(circle)
+fig.savefig(SAVE_FILENAME)
 plt.show()

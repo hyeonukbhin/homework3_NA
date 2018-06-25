@@ -1,45 +1,31 @@
-# homework1 on Numerical Analysis using PyThon
-homework1 on Numerical Analysis using PyThon
-* Vending Machine
-* Weired Dictionary
+# homework3 on Numerical Analysis using PyThon
+homework3 on Numerical Analysis using PyThon
+
+* Global Temperature
+* Carbon Dioxide
+* Estimate \\(\pi\\) Number By using the Monte-Carlo Integration
+
 ## Requirements
 
-* 필수
 ```
 sudo pip3 install requirements.txt
 ```
-* Vendig Machin Gui에 필요한 Package
-```
-sudo apt-get install python3-pyqt5
-sudo apt-get install python3-pyqt5.qtsql
-sudo apt-get install qttools5-dev-tools
-```
-* Python Package 등록
-```
-echo 'export PYTHONPATH=<Your Project Path>/:${PYTHONPATH}' >> ~/.bashrc
-```
 ## Usage
-* Vending Machine
+* Global Temperature
 ```
-cd vending_machine && python3 main.py
+python3 global_warming.py
+./global_warming.py
 ```
-* Vending Machine Using Qt GUI(Not Complete)
+![](./assets/images/global_warming.png)
+* Carbon Dioxide
 ```
-cd vending_machine && python3 main_window.py
+python3 co2_mm_mlo.py
+./co2_mm_mlo.py
 ```
-* Weired Dictionary
+![](./assets/images/co2_mm_mlo.png)
+* Estimate \\(\pi\\) Number By using the Monte-Carlo Integration
 ```
-cd weired_dictionary && python3 main.py
+python3 pi_estimate.py
+./pi_estimate.py
 ```
-
-## Configuration
-각 폴더의 config.cfg의 옵션 사용
-
-* 참고
-```
-[DEFAULT]
-path = /home/kist/coursework/homework1_NA/vending_machine
-filename = Beverage.csv
-filepath = /home/kist/coursework/homework1_NA/vending_machine/Beverage.csv
-init_df = 1
-```
+![](./assets/images/pi_estimate.png)

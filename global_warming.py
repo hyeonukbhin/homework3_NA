@@ -4,14 +4,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-FILEPATH = "assets/"
+PATH = "https://raw.githubusercontent.com/hyeonukbhin/homework3_NA/master/assets/data/"
 FILENAME = "647_Global_Temperature_Data_File.txt"
 TITLE = "Global Temperature"
 X_LABEL = "YEAR"
 Y_LABEL = "Temperature Anomaly (C)"
+SAVE_FILENAME = "assets/images/global_warming.png"
 
 coll_name = ["Year", "1-year Mean", "5-year Mean"]
-df = pd.read_csv(FILEPATH+FILENAME, delimiter="\s+", header=None)
+df = pd.read_csv(PATH + FILENAME, delimiter="\s+", header=None)
 df.columns = coll_name
 
 x = df[coll_name[0]]
@@ -29,4 +30,6 @@ ax.set_title(TITLE, fontsize=20)
 ax.set_xlabel(X_LABEL, fontsize=14)
 ax.set_ylabel(Y_LABEL, fontsize=14)
 ax.grid(c="gray", ls="-", lw=2)
+fig.savefig(SAVE_FILENAME)
 plt.show()
+
